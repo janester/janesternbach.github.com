@@ -1,10 +1,10 @@
 $(function(){
-  $("#plist").hide();
   $("#p_btn").click(show_list);
 
 });
 
 function show_list(e) {
+  $("#plist").hide();
   var height = $('#page2').offset().top;
   e.preventDefault();
   $('body').animate({scrollTop: height}, 'slow');

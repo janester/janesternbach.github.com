@@ -1,0 +1,81 @@
+@import url(http://fonts.googleapis.com/css?family=Meddon);
+@import url(http://fonts.googleapis.com/css?family=Nixie+One);
+@import url(http://fonts.googleapis.com/css?family=Abril+Fatface);
+@import url(http://fonts.googleapis.com/css?family=Purple+Purse);
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+
+body, h2, h3, h4, h5, h6 {
+  font-family: 'Nixie One', cursive;
+}
+
+h1 {
+  /*font-family: 'Meddon', cursive;*/
+  /*font-family: 'Abril Fatface', cursive;*/
+  /*font-family: 'Purple Purse', cursive;*/
+  font-family: 'Pacifico', cursive;
+  font-size: 45px;
+  padding: 20px 0px 0px 10px;
+  margin-top: 0px;
+}
+
+.page {
+  width: 100%;
+  min-height: 785px;
+  margin-top: 0px;
+}
+
+/*page 1*/
+
+#page1 {
+  background: green;
+  text-align: center;
+}
+
+#page1 .row {
+  position: relative;
+  top: 250px;
+}
+
+#page1 .row h1 {
+  margin: auto;
+  padding-left: 0px;
+  font-size: 75px;
+}
+
+#p1-word-holder {
+  text-align: left;
+  margin: auto;
+  width: 600px;
+  padding-left: 50px;
+  font-size: 15px;
+}
+
+/*page 2*/
+
+#page2 {
+  background: yellow;
+}
+
+#page2 h3 {
+  font-size: 15px;
+}
+
+#page2 ul {
+  margin-bottom: 50px;
+}
+#page2 ul li {
+  height: 250px;
+}
+
+.alt1 {
+  background: green;
+}
+
+.alt2 {
+  background: turquoise;
+}
+/*page 3*/
+
+#page3 {
+  background: purple;
+}

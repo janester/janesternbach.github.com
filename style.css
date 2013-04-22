@@ -50,6 +50,10 @@ h1 {
   font-size: 15px;
 }
 
+#buttons-holder {
+  margin-top: 100px;
+}
+
 /*page 2*/
 
 #page2 {

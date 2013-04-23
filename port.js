@@ -26,7 +26,7 @@ $(function(){
 function show_list(e) {
   var height = $('#first_p').offset().top;
   e.preventDefault();
-  $('body').animate({scrollTop: height-60}, 'slow');
+  $('body').animate({scrollTop: height-140}, 'slow');
   $("#plist").fadeIn(700);
   $(".slide2").effect("slide",{ direction: "right" }, 700);
   $(".slide1").effect("slide",700);

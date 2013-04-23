@@ -2,14 +2,6 @@ $(function(){
   $("#p_btn").click(show_list);
   $("#c_btn").click(show_contact);
 
-  $("#c-img-g").mouseenter(function(){$("#c-img-g").attr("src", "assets/images/github2.png");});
-  $("#c-img-e").mouseenter(function(){$("#c-img-e").attr("src", "assets/images/email2.png");});
-  $("#c-img-t").mouseenter(function(){$("#c-img-t").attr("src", "assets/images/twitter2.png");});
-  $("#c-img-l").mouseenter(function(){$("#c-img-l").attr("src", "assets/images/linkedin2.png");});
-  $("#c-img-g").mouseleave(function(){$("#c-img-g").attr("src", "assets/images/github.png");});
-  $("#c-img-e").mouseleave(function(){$("#c-img-e").attr("src", "assets/images/email.png");});
-  $("#c-img-t").mouseleave(function(){$("#c-img-t").attr("src", "assets/images/twitter.png");});
-  $("#c-img-l").mouseleave(function(){$("#c-img-l").attr("src", "assets/images/linkedin.png");});
 
   navHeight = $('#nav-bar').offset().top;
   $(window).scroll(function(){

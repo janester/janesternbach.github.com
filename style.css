@@ -154,3 +154,16 @@ h1 {
   text-align: center;
   margin-top: 100px;
 }
+
+.c-item {
+  height: 200px;
+}
+
+#c-img-g, #c-img-t, #c-img-e, #c-img-l {
+  padding: 5px;
+}
+
+#c-img-g:hover, #c-img-t:hover, #c-img-e:hover, #c-img-l:hover {
+  border: 5px solid #c60f13;
+  border-radius: 15px;
+}

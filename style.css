@@ -135,6 +135,8 @@ h1 {
   margin: auto;
   background: #c60f13;
   padding: 10px;
+  border: 4px solid black;
+  border-radius: 20px;
 }
 
 /*PAGE 3------------------------------------------------------------------PAGE 3*/

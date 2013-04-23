@@ -3,6 +3,7 @@
 @import url(http://fonts.googleapis.com/css?family=Abril+Fatface);
 @import url(http://fonts.googleapis.com/css?family=Purple+Purse);
 @import url(http://fonts.googleapis.com/css?family=Pacifico);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
 
 body, h2, h3, h4, h5, h6 {
   font-family: 'Nixie One', cursive;
@@ -24,10 +25,42 @@ h1 {
   margin-top: 0px;
 }
 
+
+/*nav*/
+#nav-bar-holder-fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+  text-align: center
+}
+
+#nav-bar-holder-fixed a {
+  margin: 0px 100px 0px 100px;
+  width: 30px;
+}
+
+.nav {
+  background: black;
+  border-bottom:10px solid #c60f13;
+  height: 50px;
+  font-size: 30px;
+  padding-top: 5px;
+}
+
+#nav-bar {
+  margin-left: 360px;
+}
+
+#nav-bar a {
+  margin: 10px 30px 0px 30px;
+  width: 30px;
+}
+
 /*page 1*/
 
 #page1 {
-  background: green;
+  background: url("assets/images/nycback2.jpg");
   text-align: center;
 }
 
@@ -46,13 +79,16 @@ h1 {
   text-align: left;
   margin: auto;
   width: 600px;
-  padding-left: 50px;
-  font-size: 15px;
+  padding-left: 55px;
+  font-size: 18px;
 }
 
-#buttons-holder {
-  margin-top: 100px;
+#p1-word-holder h3, #p1-word-holder h4 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+
 }
+
 
 /*page 2*/
 

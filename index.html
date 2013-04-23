@@ -13,7 +13,9 @@
     <script type="text/javascript" src="port.js"></script>
   </header>
   <body>
+    <div id="nav-bar-holder-fixed">
 
+    </div>
 
     <div id="page1" class="page">
       <div class="row" id="first-row">
@@ -23,15 +25,12 @@
             <h3>Full-Stack Ruby on Rails Web Developer.</h3>
             <h4>Curious Cat.</h4>
           </div>
-          <div class="row" id="buttons-holder">
-            <div class="large-5 columns">
-              <a href="#" class="button radius large alert" id="p_btn">Projects</a>
-            </div>
-            <div class="large-5 columns">
-              <a href="#" class="button radius large alert" id="a_btn">About</a>
-            </div>
-            <div class="large-5 columns">
-              <a href="#" class="button radius large alert" id="c_btn">Contact</a>
+          <div class="row" id="nav-bar-holder">
+            <div class="large-7 large-centered columns nav" id="nav-bar">
+              <a href="#" id="p_btn">Projects</a>
+              <a href="#" id="a_btn">About</a>
+              <a href="#" id="c_btn">Contact</a>
+              </div>
             </div>
           </div>
         </div>
@@ -46,7 +45,7 @@
 
           <ul id="plist" class="large-block-grid-2">
 
-            <li class="alt1 slide1">
+            <li class="alt1 slide1" id="first_p">
               <h2>BarCode</h2>
               <h3>A fun and easy way to organize your friends and/or strangers for a pub crawl scavenger hunt. This single-page app has a mobile version as well as a desktop version.</h3>
             </li>

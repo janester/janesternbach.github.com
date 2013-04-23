@@ -64,6 +64,13 @@ h1 {
   color: black;
 }
 
+#nav-bar a:hover, #nav-bar-holder-fixed a:hover {
+  background: black;
+  color: #c60f13;
+}
+
+
+
 /*PAGE 1-----------------------------------------------------------------PAGE 1*/
 
 #page1 {
@@ -95,9 +102,12 @@ h1 {
 
 #p1-word-holder h3, #p1-word-holder h4 {
   font-family: 'Lato', sans-serif;
+  /*font-family: 'Nixie One', cursive;*/
   font-weight: 400;
   margin: 0px;
   text-shadow: 3px 3px 3px rgba(0, 0, 0, 1);
+  /*stroke text shadow*/
+  /*text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;*/
   color: white;
 }
 
@@ -129,5 +139,17 @@ h1 {
 
 /*PAGE 3------------------------------------------------------------------PAGE 3*/
 #page3 {
-  background: purple;
+  background: url("assets/images/cartographer.png");
+}
+
+#page3 h1 {
+  color: white;
+  margin-top: 60px;
+}
+
+#c-info {
+  background: white;
+  border: 10px solid #c60f13;
+  padding: 20px;
+  text-align: center;
 }

@@ -158,6 +158,19 @@ h1 {
 .proj-left {
   text-align: center;
 }
+
+.proj-left a {
+  color: black;
+}
+
+.proj-left a:hover {
+  color: white;
+}
+
+#page2 h3 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
 /*PAGE 3------------------------------------------------------------------PAGE 3*/
 #page3 {
   background: url("assets/images/cartographer.png");

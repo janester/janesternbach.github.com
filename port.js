@@ -1,6 +1,8 @@
 $(function(){
   $("#p_btn").click(show_list);
   $("#c_btn").click(show_contact);
+  $("#a_btn").click(show_main);
+
 
 
   navHeight = $('#nav-bar').offset().top;
@@ -45,4 +47,15 @@ function show_contact(e) {
   // $("#c-info").effect("slide",{ direction: "down"}, 2000);
   $("#c-info").hide();
   $("#c-info").slideDown(2000);
+}
+
+
+
+function show_main(e) {
+  var height = $("#page1").offset().top;
+  $("#p1-heads").hide();
+  e.preventDefault();
+  $("body").animate({scrollTop:height}, "slow");
+  $("#p1-heads").effect("slide", {direction:"down"}, 1500);
+
 }

@@ -126,19 +126,38 @@ h1 {
   margin-bottom: 50px;
 }
 #page2 ul li {
-  height: 250px;
+  height: 275px;
 }
 
 .proj-holder {
   width: 90%;
-  height: 85%;
+  height: 100%;
   margin: auto;
   background: #c60f13;
   padding: 10px;
   border: 4px solid black;
   border-radius: 20px;
 }
+#page2 a h2 {
+  margin-bottom: 0px;
+}
 
+#page2 a h2:hover {
+  color: white;
+}
+
+#page2 a img {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#page2 a img:hover {
+  border: 1px solid white;
+}
+
+.proj-left {
+  text-align: center;
+}
 /*PAGE 3------------------------------------------------------------------PAGE 3*/
 #page3 {
   background: url("assets/images/cartographer.png");

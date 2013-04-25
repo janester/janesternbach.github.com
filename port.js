@@ -12,7 +12,7 @@ $(function(){
       var p = $("#p_btn").detach();
       var a = $("#a_btn").detach();
       var c = $("#c_btn").detach();
-      $("#nav-bar-holder-fixed").append(p).append(a).append(c);
+      $("#nav-bar-holder-fixed").append(a).append(p).append(c);
       }
     if($(window).scrollTop() < navHeight)
     {
@@ -20,7 +20,7 @@ $(function(){
       var p2 = $("#p_btn").detach();
       var a2 = $("#a_btn").detach();
       var c2 = $("#c_btn").detach();
-      $("#nav-bar").append(p2).append(a2).append(c2);
+      $("#nav-bar").append(a2).append(p2).append(c2);
     }
   });
 });
@@ -28,11 +28,13 @@ $(function(){
 
 function show_list(e) {
   var height = $('#page2').offset().top;
+  $(".proj-img").hide();
   e.preventDefault();
   $('body').animate({scrollTop: height-30}, 'slow');
   $("#plist").fadeIn(700);
   $(".slide2").effect("slide",{ direction: "right" }, 700);
   $(".slide1").effect("slide",700);
+  $(".proj-img").fadeIn(2000);
 }
 
 

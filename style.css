@@ -137,13 +137,17 @@ h1 {
   padding: 10px;
   border: 4px solid black;
   border-radius: 20px;
+  -webkit-box-shadow: 7px 7px 5px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    7px 7px 5px rgba(50, 50, 50, 0.75);
+  box-shadow:         7px 7px 5px rgba(50, 50, 50, 0.75);
 }
 #page2 a h2 {
   margin-bottom: 0px;
+  color: white;
 }
 
 #page2 a h2:hover {
-  color: white;
+  color: black;
 }
 
 #page2 a img {
@@ -160,16 +164,17 @@ h1 {
 }
 
 .proj-left a {
-  color: black;
+  color: white;
 }
 
 .proj-left a:hover {
-  color: white;
+  color: black;
 }
 
 #page2 h3 {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
+  color: white;
 }
 /*PAGE 3------------------------------------------------------------------PAGE 3*/
 #page3 {
@@ -187,6 +192,7 @@ h1 {
   padding: 20px;
   text-align: center;
   margin-top: 100px;
+  border-radius: 20px;
 }
 
 .c-item {

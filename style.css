@@ -1,5 +1,9 @@
 body, h2, h3, h4, h5, h6 {
-  font-family: 'Nixie One', cursive;
+  font-family: 'Nixie One', Georgia, cursive;
+}
+
+ul {
+  list-style: none;
 }
 
 h1 {
@@ -126,9 +130,9 @@ h1 {
   width: 90%;
   height: 100%;
   margin: auto;
-  background: #c60f13;
+  background: rgba(198, 15, 19, 0.52);
   padding: 10px;
-  border: 4px solid black;
+  border: 10px solid #c60f13;
   border-radius: 20px;
   -webkit-box-shadow: 7px 7px 5px rgba(50, 50, 50, 0.75);
   -moz-box-shadow:    7px 7px 5px rgba(50, 50, 50, 0.75);

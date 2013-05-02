@@ -132,7 +132,7 @@ h1 {
   margin: auto;
   background: rgba(198, 15, 19, 0.52);
   padding: 10px;
-  border: 10px solid #c60f13;
+  border: 5px solid #c60f13;
   border-radius: 20px;
   -webkit-box-shadow: 7px 7px 5px rgba(50, 50, 50, 0.75);
   -moz-box-shadow:    7px 7px 5px rgba(50, 50, 50, 0.75);

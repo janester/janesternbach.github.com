@@ -32,7 +32,7 @@ function show_list(e) {
   var height = $('#page2').offset().top;
   $(".proj-img").hide();
   e.preventDefault();
-  $('body').animate({scrollTop: height-30}, 'slow');
+  $('body, html').animate({scrollTop: height-30}, 'slow');
   $("#plist").fadeIn(700);
   $(".slide2").effect("slide",{ direction: "right" }, 700);
   $(".slide1").effect("slide",700);
@@ -43,7 +43,7 @@ function show_list(e) {
 function show_contact(e) {
   var height = $("#page3").offset().top;
   e.preventDefault();
-  $("body").animate({scrollTop: height+30}, "slow");
+  $("body, html").animate({scrollTop: height+30}, "slow");
   // $("#c-info").effect("slide",{ direction: "down"}, 2000);
   $("#c-info").hide();
   $("#c-info").slideDown(2000);
@@ -55,7 +55,7 @@ function show_main(e) {
   var height = $("#page1").offset().top;
   $("#p1-heads").hide();
   e.preventDefault();
-  $("body").animate({scrollTop:height}, "slow");
+  $("body, html").animate({scrollTop:height}, "slow");
   $("#p1-heads").effect("slide", {direction:"down"}, 1500);
 
 }

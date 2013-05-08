@@ -22,7 +22,9 @@ $(function(){
       var p2 = $("#p_btn").detach();
       var a2 = $("#a_btn").detach();
       var c2 = $("#c_btn").detach();
-      $("#nav-bar").append(a2).append(p2).append(c2);
+      $("#a1").append(a2);
+      $("#a2").append(p2);
+      $("#a3").append(c2);
     }
   });
 });

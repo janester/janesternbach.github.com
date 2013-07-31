@@ -55,6 +55,18 @@ h1 {
 #nav-bar {
   /*margin-left: 360px;*/
   margin-top: 30px;
+  background: white;
+  border-bottom:10px solid #c60f13;
+  height: 50px;
+  font-size: 30px;
+
+}
+
+#nav-bar li {
+  float: left;
+  width: 33.3%;
+  text-align: center;
+
 }
 
 #nav-bar a {
@@ -65,6 +77,8 @@ h1 {
   background: black;
   color: #c60f13;
 }
+
+
 
 
 
@@ -92,7 +106,7 @@ h1 {
 #p1-word-holder {
   text-align: left;
   margin: auto;
-  width: 600px;
+  width: 100%;
   /*padding-left: 55px;*/
   font-size: 18px;
 }

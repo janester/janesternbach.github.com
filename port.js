@@ -3,7 +3,15 @@ $(function(){
   $("#c_btn").click(show_contact);
   $("#a_btn").click(show_main);
 
+  // $(window).on("resize", function(){
+  //   var new_height = $(window).height();
+  //   console.log(new_height);
+  //   $.each($(".page"), function(k, v){
+  //     $(v).css("height", new_height+"px")
+  //   })
 
+  //   console.log($(".page").first().height())
+  // })
 
   navHeight = $('#nav-bar').offset().top;
   $(window).scroll(function(){

@@ -3,17 +3,13 @@ $(function(){
   $("#c_btn").click(show_contact);
   $("#a_btn").click(show_main);
 
-  // $(window).on("resize", function(){
-  //   var new_height = $(window).height();
-  //   console.log(new_height);
-  //   $.each($(".page"), function(k, v){
-  //     $(v).css("height", new_height+"px")
-  //   })
+  $(window).on("resize", function(){
+    adjust_height();
+  });
+  adjust_height();
 
-  //   console.log($(".page").first().height())
-  // })
-  // var sequence = $("#sequence").sequence().data("sequence");
-  navHeight = $('#nav-bar').offset().top;
+
+  navHeight = $('#nav-bar').offset().top-50;
   $(window).scroll(function(){
     if($(window).scrollTop() >= navHeight)
       {
@@ -40,6 +36,17 @@ $(function(){
 });
 
 showing_slide = null;
+
+function adjust_height() {
+  var new_height = window.innerHeight;
+  console.log(new_height);
+  $.each($(".page"), function(k, v){
+    $(v).css("height", new_height+"px");
+  });
+
+  console.log($(".page").first().height());
+}
+
 
 function show_list(e) {
   var height = $('#page2').offset().top;

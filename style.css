@@ -38,7 +38,7 @@ h1 {
 }
 
 #nav-bar-holder-fixed a {
-  margin: 0px 100px 0px 100px;
+  margin: 0px 10% 0px 10%;
   width: 30px;
   color: black;
 
@@ -87,6 +87,7 @@ h1 {
 #page1 {
   background: url("assets/images/nycback.jpg");
   text-align: center;
+  background-size: cover;
 }
 
 #first-row {

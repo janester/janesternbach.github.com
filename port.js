@@ -33,9 +33,21 @@ $(function(){
   });
   setup_slide();
   $(window).on("keydown", find_key);
+
+  $("#page2").on("mousedown", function(e){
+    console.log("down");
+    down = e.clientX;
+  });
+  $("#page2").on("mouseup", function(e){
+    console.log("up");
+    up = e.clientX;
+    configure_swipe();
+  });
 });
 
 showing_slide = null;
+down = 0;
+up = 0;
 
 function adjust_height() {
   var new_height = window.innerHeight;
@@ -97,6 +109,21 @@ function find_key(key) {
     slide_right();
   }
 }
+
+function configure_swipe() {
+  if(Math.abs(down-up) > 50) {
+    if (down > up) {
+      slide_right();
+    }
+    else if (down == up) {
+      return false;
+    }
+    else {
+      slide_left();
+    }
+  } //end greater than 50
+
+}// end configure swipe
 
 function slide_right() {
   if (showing_slide.prev().length == 0) {

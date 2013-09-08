@@ -12,7 +12,7 @@ $(function(){
 
   //   console.log($(".page").first().height())
   // })
-
+  // var sequence = $("#sequence").sequence().data("sequence");
   navHeight = $('#nav-bar').offset().top;
   $(window).scroll(function(){
     if($(window).scrollTop() >= navHeight)
@@ -35,8 +35,11 @@ $(function(){
       $("#a3").append(c2);
     }
   });
+  setup_slide();
+  $(window).on("keydown", find_key);
 });
 
+showing_slide = null;
 
 function show_list(e) {
   var height = $('#page2').offset().top;
@@ -44,8 +47,8 @@ function show_list(e) {
   e.preventDefault();
   $('body, html').animate({scrollTop: height-30}, 'slow');
   $("#plist").fadeIn(700);
-  $(".slide2").effect("slide",{ direction: "right" }, 700);
-  $(".slide1").effect("slide",700);
+  showing_slide.effect("slide",{ direction: "right" }, 700);
+  // $("#slider-holder").effect("slide",700);
   $(".proj-img").fadeIn(2000);
 }
 
@@ -68,4 +71,66 @@ function show_main(e) {
   $("body, html").animate({scrollTop:height}, "slow");
   $("#p1-heads").effect("slide", {direction:"down"}, 1500);
 
+}
+
+function setup_slide() {
+  $(".slide").hide();
+  $(".slide").first().show();
+  showing_slide = $(".slide").first();
+}
+
+function find_key(key) {
+  console.log(key.keyCode);
+  if (key.keyCode == 37)
+  {
+    slide_left();
+  }
+  else if (key.keyCode == 39)
+  {
+    slide_right();
+  }
+}
+
+function slide_right() {
+  if (showing_slide.prev().length == 0) {
+    $(".slide").last().hide();
+  }
+  else {
+    showing_slide.prev().hide();
+  }
+  // $(".animated").hide();
+  $(".animated").removeClass("fadeOutLeft").removeClass("fadeInRightBig").removeClass("fadeOutRight").removeClass("fadeInLeftBig");
+  showing_slide.addClass("animated fadeOutLeft");
+  if (showing_slide.next().length == 0)
+  {
+    var next = $(".slide").first();
+  }
+  else
+  {
+    var next = showing_slide.next();
+  }
+  next.addClass("animated fadeInRightBig").show();
+  showing_slide = next;
+}
+
+function slide_left(){
+  if (showing_slide.next().length == 0) {
+    $(".slide").first().hide();
+  }
+  else {
+    showing_slide.next().hide();
+  }
+  // $(".animated").hide();
+  $(".animated").removeClass("fadeOutLeft").removeClass("fadeInRightBig").removeClass("fadeOutRight").removeClass("fadeInLeftBig");
+  showing_slide.addClass("animated fadeOutRight");
+  if (showing_slide.prev().length == 0)
+  {
+    var prev = $(".slide").last();
+  }
+  else
+  {
+    var prev = showing_slide.prev();
+  }
+  prev.addClass("animated fadeInLeftBig").show();
+  showing_slide = prev;
 }

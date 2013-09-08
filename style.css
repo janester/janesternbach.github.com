@@ -137,7 +137,7 @@ h1 {
   margin-bottom: 50px;
 }
 #page2 ul li {
-  height: 275px;
+  /*height: 275px;*/
 }
 
 .proj-holder {
@@ -218,4 +218,9 @@ h1 {
 #c-info-list img:hover {
   border: 5px solid #c60f13;
   border-radius: 15px;
+}
+
+.slide {
+  border: 2px solid black;
+  position: absolute;
 }

@@ -47,6 +47,7 @@ $(function(){
 
 
 function show_list(e) {
+  $(".animated").removeClass("fadeOutLeft").removeClass("fadeInRightBig").removeClass("fadeOutRight").removeClass("fadeInLeftBig").removeClass("animated");
   $("#sequence").children().hide();
   var height = $('#page2').offset().top;
   // $(".proj-img").hide();

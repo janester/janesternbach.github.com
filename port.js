@@ -3,6 +3,14 @@ $(function(){
   $("#c_btn").click(show_contact);
   $("#a_btn").click(show_main);
 
+  $("#barcode-img").on("mouseover", function(){
+    $(this).attr("src", "assets/images/barcode/placeit-barcode2.png");
+  });
+  $("#barcode-img").on("mouseleave", function(){
+    $(this).attr("src", "assets/images/barcode/placeit-barcode.png");
+  });
+
+
   // $(window).on("resize", function(){
   //   var new_height = $(window).height();
   //   console.log(new_height);
@@ -39,14 +47,14 @@ $(function(){
 
 
 function show_list(e) {
+  $("#sequence").children().hide();
   var height = $('#page2').offset().top;
-  $(".proj-img").hide();
+  // $(".proj-img").hide();
   e.preventDefault();
   $('body, html').animate({scrollTop: height-30}, 'slow');
-  $("#plist").fadeIn(700);
-  $(".slide2").effect("slide",{ direction: "right" }, 700);
-  $(".slide1").effect("slide",700);
-  $(".proj-img").fadeIn(2000);
+  $("#sequence").effect("slide",{ direction: "right" }, 1000);
+  $("#sequence").children().fadeIn(2000);
+  // $(".proj-img").fadeIn(2000);
 }
 
 

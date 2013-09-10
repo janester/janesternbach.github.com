@@ -6,6 +6,7 @@
     <!-- stylesheets -->
     <link rel="stylesheet" href="assets/normalize.css">
     <link rel="stylesheet" href="assets/foundation.min.css">
+    <link rel="stylesheet" type="text/css" href="animate.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href='http://fonts.googleapis.com/css?family=Nixie+One|Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Pacifico' rel='stylesheet' type='text/css'>
     <!-- javascript -->
@@ -13,6 +14,7 @@
     <script src="assets/jquery-ui-1.10.2.custom.min.js"></script>
     <script src="assets/custom.modernizr.js"></script>
     <script src="assets/foundation.min.js"></script>
+    <script type="text/javascript" src="slider.js"></script>
     <script type="text/javascript" src="port.js"></script>
     <!-- <meta content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0" name="viewport" /> -->
     <link href="https://s3.amazonaws.com/jane-resume/light_bulb.ico" rel="icon" type="image/x-icon" />
@@ -59,55 +61,210 @@
       <div id="sequence" class="proj-holder">
         <img class="sequence-prev" src="assets/images/bt-prev.png" alt="Previous" />
         <img class="sequence-next" src="assets/images/bt-next.png" alt="Next" />
-          <ul class="sequence-canvas">
-              <li class="animate-in">
-                  <div class="info1 slide">
+          <ul id="sequence-canvas">
+              <li class="slide" id="proj1">
+                  <div class="info1">
                     <div class="row">
-                      <div class="large-5 large-offset-1 columns">
+                      <div class="large-6 columns">
                         <a href="http://barcodenyc.herokuapp.com/" target="_blank"><h2>BarCode</h2></a>
-                        <h3>A fun and easy way to organize your friends and/or strangers for a pub crawl scavenger hunt. This single-page app has a mobile version as well as a desktop version.</h3>
+                        <p>A fun and easy way to organize your friends and/or strangers for a pub crawl scavenger hunt. This single-page app has a mobile version as well as a desktop version.</p>
+                        <h3>Technologies Used:</h3>
+                        <div class="row tech-list">
+                          <div class="large-6 columns">
+                            <ul>
+                              <li>Ruby/Rails</li>
+                              <li>JavaScript/JQuery</li>
+                              <li>AJAX</li>
+                              <li>HAML</li>
+                              <li>SASS</li>
+                              <li>HTML5 Geolocation</li>
+                            </ul>
+                          </div>
+                          <div class="large-6 columns">
+                            <ul>
+                              <li>Twilio SMS</li>
+                              <li>AWS SES</li>
+                              <li>AWS S3 (Fog/Carrierwave)</li>
+                              <li>JQuery UI Drag and Drop</li>
+                              <li>MultiDatesPicker</li>
+                              <li>Foundation 4</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <a class="github-link" href="https://github.com/janesternbach/BarCode"><img src="assets/images/github.png"></a>
+
+                      </div>
+                      <div class="large-6 columns">
+                        <a href="http://barcodenyc.herokuapp.com/" target="_blank"><img id="barcode-img" src="assets/images/barcode/placeit-barcode.png"></a>
+                      </div>
+                    </div>
+
+                  </div>
+              </li>
+              <li class="slide" id="proj2">
+
+                  <div class="row">
+                    <div class="large-6 columns">
+                      <a href="http://moviepongv2.herokuapp.com/" target="_blank"><h2>Movie Pong</h2></a>
+                      <p>Sometimes referred to as "The Movie Game." Players can try to pong the computer in movie/actor knowledge.</p>
+                      <h3>Technologies Used:</h3>
+                      <div class="row tech-list">
+                        <div class="large-6 columns">
+                          <ul>
+                            <li>Ruby/Rails</li>
+                            <li>JavaScript/JQuery</li>
+                            <li>AJAX</li>
+                            <li>HAML</li>
+                          </ul>
+                        </div>
+                        <div class="large-6 columns">
+                          <ul>
+                            <li>SASS</li>
+                            <li>The Movie Database API</li>
+                            <li>JQuery UI Autocomplete</li>
+                            <li>Foundation 4</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <a class="github-link" href="https://github.com/janesternbach/v2_movie_pong"><img src="assets/images/github.png"></a>
+
+                    </div>
+                    <div class="large-6 columns">
+                      <a href="http://moviepongv2.herokuapp.com/" target="_blank"><img class="proj-img" src="assets/images/moviepong/placeit-moviepong.png"></a>
+                    </div>
+                  </div>
+              </li>
+              <li class="slide" id="proj3">
+                <div class="row">
+                  <div class="large-6 columns">
+                    <a href="http://somethingborrowed.herokuapp.com/" target="_blank"><h2>Something Borrowed</h2></a>
+                    <p>Ever needed to borrow something for but not know who to ask? This app facilitates easy borrowing and lending between strangers based on location.</p>
+                    <h3>Technologies Used:</h3>
+                    <div class="row tech-list">
+                      <div class="large-6 columns">
                         <ul>
-                          <li>1</li>
-                          <li>1</li>
-                          <li>1</li>
-                          <li>1</li>
-                          <li>1</li>
-                          <li>1</li>
+                          <li>Ruby/Rails</li>
+                          <li>JavaScript/JQuery</li>
+                          <li>AJAX</li>
+                          <li>HAML</li>
+                          <li>SASS</li>
+                          <li>HTML5 Geolocation</li>
                         </ul>
                       </div>
                       <div class="large-6 columns">
-                        <a href="http://barcodenyc.herokuapp.com/" target="_blank"><img src="assets/images/barcode/placeit-barcode.png"></a>
+                        <ul>
+                          <li>AWS SES</li>
+                          <li>AWS S3 (Fog/Carrierwave)</li>
+                          <li>JQuery UI Autocomplete</li>
+                          <li>Google Maps JavaScript API</li>
+                          <li>Foundation 4</li>
+                        </ul>
                       </div>
                     </div>
+                    <a class="github-link" href="https://github.com/samdec11/somethingborrowed"><img src="assets/images/github.png"></a>
 
                   </div>
-              </li>
-              <li>
-                <div class="info2 slide">
-                  <div class="row">
-                    <div class="large-5 large-offset-1 columns">
-                      <a href="http://somethingborrowed.herokuapp.com/" target="_blank"><h2>Something Borrowed</h2></a>
-                      <h3>Ever needed to borrow something for but not know who to ask? This app facilitates easy borrowing and lending between strangers based on location.</h3>
-                      <ul>
-                        <li>1</li>
-                        <li>1</li>
-                        <li>1</li>
-                        <li>1</li>
-                        <li>1</li>
-                        <li>1</li>
-                      </ul>
-                    </div>
-                    <div class="large-6 columns">
-                      <a href="http://somethingborrowed.herokuapp.com/" target="_blank"><img class="proj-img" src="assets/images/somethingborrowed/placeit-something-borrowed.png"></a>
-                    </div>
+                  <div class="large-6 columns">
+                    <a href="http://somethingborrowed.herokuapp.com/" target="_blank"><img class="proj-img" src="assets/images/somethingborrowed/placeit-something-borrowed.png"></a>
                   </div>
-
                 </div>
               </li>
-              <li>
-                  <div class="info3 slide">
-                      <p>Frame 3</p>
+              <li class="slide" id="proj4">
+                <div class="row">
+                  <div class="large-6 columns">
+                    <a href="http://interviewr.herokuapp.com/" target="_blank"><h2>Interviewr</h2></a>
+                    <p>A full-featured quiz taking app. With Interviewr a user can make, take, and track quizzes.</p>
+                    <h3>Technologies Used:</h3>
+                    <div class="row tech-list">
+                      <div class="large-6 columns">
+                        <ul>
+                          <li>Ruby/Rails</li>
+                          <li>JavaScript/JQuery</li>
+                          <li>AJAX</li>
+                          <li>HAML</li>
+                          <li>SASS</li>
+                          <li>AWS SES</li>
+                          <li>Twilio SMS</li>
+                        </ul>
+                      </div>
+                      <div class="large-6 columns">
+                        <ul>
+                          <li>AWS S3 (Fog/Carrierwave)</li>
+                          <li>Stripe JavaScript API</li>
+                          <li>PostgreSQL Full-Text Search</li>
+                          <li>Google Maps JavaScript API</li>
+                          <li>Morris JS</li>
+                          <li>DataTables JS</li>
+                          <li>Foundation 4</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <a class="github-link" href="https://github.com/bwreid/interviewr-wdi"><img src="assets/images/github.png"></a>
+
                   </div>
+                  <div class="large-6 columns">
+                    <a href="http://interviewr.herokuapp.com/" target="_blank"><img class="proj-img" src="assets/images/interviewer/placeit-interviewr.png"></a>
+                  </div>
+                </div>
+              </li>
+              <li class="slide" id="proj5">
+                <div class="row">
+                  <div class="large-6 columns">
+                    <a href="http://oceanicairlines.herokuapp.com/" target="_blank"><h2>Oceanic Airlines</h2></a>
+                    <p>An airline travel booking app. Admins can create planes and flights for the airline. Users can browse flights and "purchase" tickets for a specific flight using a dynamic seating chart</p>
+                    <h3>Technologies Used:</h3>
+                    <div class="row tech-list">
+                      <div class="large-6 columns">
+                        <ul>
+                          <li>Ruby/Rails</li>
+                          <li>JavaScript/JQuery</li>
+                          <li>AJAX</li>
+                        </ul>
+                      </div>
+                      <div class="large-6 columns">
+                        <ul>
+                          <li>HAML</li>
+                          <li>SASS</li>
+                          <li>Foundation 4</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <a class="github-link" href="https://github.com/ChloeStinetorf/oceanic"><img src="assets/images/github.png"></a>
+                  </div>
+                  <div class="large-6 columns">
+                    <a href="http://oceanicairlines.herokuapp.com/" target="_blank"><img class="proj-img" src="assets/images/oceanic/placeit-oceanic.png"></a>
+                  </div>
+                </div>
+              </li>
+              <li class="slide" id="proj6">
+                <div class="row">
+                  <div class="large-6 columns">
+                    <a href="http://checkmate-wdi.herokuapp.com/" target="_blank"><h2>Checkmate</h2></a>
+                    <p>A banking app that allows users to manage multiple bank accounts from one central location. Users can transfer between banks, as well as deposit or withdraw from a specific bank.</p>
+                    <h3>Technologies Used:</h3>
+                    <div class="row tech-list">
+                      <div class="large-6 columns">
+                        <ul>
+                          <li>Ruby/Rails</li>
+                          <li>JavaScript/JQuery</li>
+                          <li>AJAX</li>
+                        </ul>
+                      </div>
+                      <div class="large-6 columns">
+                        <ul>
+                          <li>HAML</li>
+                          <li>SASS</li>
+                          <li>Foundation 4</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <a class="github-link" href="https://github.com/bwreid/checkmate"><img src="assets/images/github.png"></a>
+
+                  </div>
+                  <div class="large-6 columns">
+                    <a href="http://checkmate-wdi.herokuapp.com/" target="_blank"><img class="proj-img" src="assets/images/checkmate/placeit-checkmate.png"></a>
+                  </div>
+                </div>
               </li>
           </ul>
       </div>

@@ -18,10 +18,18 @@ h1 {
   font-weight: normal;
 }
 
+p {
+  font-family: "Lato";
+  font-weight: 300;
+  color: white;
+  font-size: 1em;
+}
+
 .page {
   width: 100%;
   min-height: 810px;
   margin-top: 0px;
+  height: 100%;
 }
 
 
@@ -87,6 +95,7 @@ h1 {
 #page1 {
   background: url("assets/images/nycback.jpg");
   text-align: center;
+  background-size: cover;
 }
 
 #first-row {
@@ -133,12 +142,6 @@ h1 {
   font-size: 15px;
 }
 
-#page2 ul {
-  margin-bottom: 50px;
-}
-#page2 ul li {
-  /*height: 275px;*/
-}
 
 .proj-holder {
   width: 90%;
@@ -162,7 +165,29 @@ h1 {
 }
 
 #page2 a img:hover {
-  border: 1px solid rgba(255, 255, 255, 0);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+#page2 a img {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
 }
 
 .proj-left {
@@ -178,10 +203,38 @@ h1 {
 }
 
 #page2 h3 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Nixie One', sans-serif;
   font-weight: 300;
   color: white;
+  font-size: 1.5em;
 }
+
+.slide ul {
+  margin: 0;
+  color:white;
+  font-family: "Lato";
+  font-weight: 300;
+}
+
+a.github-link {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  display: inline-block;
+  color: black;
+}
+
+
+a.github-link img {
+  width: 15%;
+  margin-right: 15%;
+}
+
+.tech-list {
+  height: 150px;
+}
+
+
 /*PAGE 3------------------------------------------------------------------PAGE 3*/
 #page3 {
   background: url("assets/images/cartographer.png");
@@ -226,14 +279,6 @@ h1 {
     overflow: hidden;
 }
 
-#sequence > .sequence-canvas li > * {  /* required */
-    position: absolute;
-    -webkit-transition-timing-function: 1s ease-in-out;
-    -moz-transition-timing-function: 1s ease-in-out;
-    -ms-transition-timing-function: 1s ease-in-out;
-    -o-transition-timing-function: 1s ease-in-out;
-    transition-timing-function: 1s ease-in-out;
-}
 
 #sequence > .sequence-canvas { /* required */
     height: 100%;
@@ -256,7 +301,7 @@ h1 {
   font-weight: bold;
   position: absolute;
   opacity: 0.4;
-  top: 280px;
+  top: 210px;
   height: 41px;
   width: 39px;
   z-index: 20;
@@ -291,6 +336,7 @@ h1 {
   /*background: blue;*/
   width: 100%;
   height: 100%;
+  position: absolute;
 }
 
 

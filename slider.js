@@ -54,13 +54,6 @@ function find_key(key) {
 // }// end configure swipe
 
 function slide_right() {
-  if (showing_slide.prev().length == 0) {
-    $(".slide").last().hide();
-  }
-  else {
-    showing_slide.prev().hide();
-  }
-  // $(".animated").hide();
   $(".animated").removeClass("fadeOutLeft").removeClass("fadeInRightBig").removeClass("fadeOutRight").removeClass("fadeInLeftBig");
   showing_slide.addClass("animated fadeOutLeft");
   if (showing_slide.next().length == 0)
@@ -72,17 +65,12 @@ function slide_right() {
     var next = showing_slide.next();
   }
   next.addClass("animated fadeInRightBig").show();
+  var old = showing_slide;
   showing_slide = next;
+  make_hidden(old);
 }
 
 function slide_left(){
-  if (showing_slide.next().length == 0) {
-    $(".slide").first().hide();
-  }
-  else {
-    showing_slide.next().hide();
-  }
-  // $(".animated").hide();
   $(".animated").removeClass("fadeOutLeft").removeClass("fadeInRightBig").removeClass("fadeOutRight").removeClass("fadeInLeftBig");
   showing_slide.addClass("animated fadeOutRight");
   if (showing_slide.prev().length == 0)
@@ -94,5 +82,11 @@ function slide_left(){
     var prev = showing_slide.prev();
   }
   prev.addClass("animated fadeInLeftBig").show();
+  var old = showing_slide;
   showing_slide = prev;
+  make_hidden(old);
+}
+
+function make_hidden(old){
+  setTimeout(function(){$(old).hide();}, 1000);
 }
